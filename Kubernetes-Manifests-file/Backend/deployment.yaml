@@ -7,11 +7,11 @@ metadata:
     role: api
     env: demo
 spec: 
-  replicas: 4
+  replicas: 2
   strategy: 
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 8
+      maxSurge: 4
       maxUnavailable: 25%
   selector: 
     matchLabels:
